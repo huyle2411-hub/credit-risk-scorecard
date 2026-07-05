@@ -4,7 +4,7 @@ Xây dựng mô hình Probability of Default trên bộ Give Me Some Credit (Kag
 
 **Tiến độ:**
 - Data-quality audit: Done
-- Cleaning + WOE/IV: Pending
+- Cleaning + WOE/IV: Done
 - Scorecard + đánh giá: Pending
 - Challenger model: Pending
 
