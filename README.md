@@ -5,7 +5,7 @@ Xây dựng mô hình Probability of Default trên bộ Give Me Some Credit (Kag
 **Tiến độ:**
 - Data-quality audit: Done
 - Cleaning + WOE/IV: Done
-- Scorecard + đánh giá: Pending
+- Scorecard + đánh giá: Done
 - Challenger model: Pending
 
 **Công cụ:** Python (pandas, scikit-learn, statsmodels), Colab.
