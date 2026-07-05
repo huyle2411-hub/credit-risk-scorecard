@@ -1,12 +1,13 @@
 # Credit Risk Scorecard
 
-Xây dựng mô hình Probability of Default trên bộ Give Me Some Credit (Kaggle, 150k hồ sơ vay)
+[English]
+This project builds a credit scorecard that estimates the chance a borrower falls 90 or more days behind within two years. It uses the Give Me Some Credit dataset from Kaggle, which holds 150,000 borrower records where roughly 6.7 percent end up in serious delinquency.
+Before any modelling, the data goes through a quality review done the way an auditor would approach it. Monthly income is missing for about a fifth of the records, and three of the delinquency columns carry impossible values of 96 and 98 on the very same 269 borrowers, a group that turns out to default more than half the time. Instead of dropping these rows or filling them in blindly, the work keeps their signal and cleans the columns so the later binning is not thrown off.
+The model itself is a logistic regression on weight of evidence features. That choice is deliberate, because a bank has to justify a rejection both to the customer and to a regulator, and a transparent model makes that possible. On a held out test set it reaches an AUC of 0.852, a KS of 0.552, and a Gini of 0.704, and the training and test scores sit almost on top of each other, which says it is not overfitting. A gradient boosting model was tried as a ceiling and beat the scorecard by only about one AUC point, so the interpretable version was the one worth keeping.
+The scores are then turned into points and grouped into bands. The bad rate falls cleanly from around 51 percent in the lowest band to under 1 percent in the highest, which is exactly the view a credit quality team relies on to set an approval cutoff and to watch how a portfolio behaves over time.
 
-**Tiến độ:**
-- Data-quality audit: Done
-- Cleaning + WOE/IV: Done
-- Scorecard + đánh giá: Done
-- Challenger model: Pending
-
-**Công cụ:** Python (pandas, scikit-learn, statsmodels), Colab.
-Dataset không kèm trong repo — tải từ Kaggle: Give Me Some Credit
+[Vietnamese]
+Dự án này xây dựng một scorecard tín dụng để ước lượng khả năng một khách hàng trễ hạn từ 90 ngày trở lên trong vòng hai năm. Dữ liệu lấy từ bộ Give Me Some Credit trên Kaggle, gồm 150.000 hồ sơ vay, trong đó khoảng 6,7 phần trăm rơi vào nhóm nợ xấu nghiêm trọng.
+Trước khi mô hình hóa, dữ liệu được rà soát chất lượng theo cách một kiểm toán viên sẽ làm. Thu nhập hàng tháng bị thiếu ở khoảng một phần năm số hồ sơ, và ba cột lịch sử trễ hạn chứa các giá trị bất khả thi là 96 và 98 trên đúng cùng 269 khách hàng, một nhóm mà tỷ lệ vỡ nợ lên tới hơn một nửa. Thay vì xóa các dòng này hay điền bừa vào, dự án giữ lại tín hiệu của chúng và làm sạch các cột để bước chia bin về sau không bị lệch.
+Mô hình chính là một hồi quy logistic chạy trên các biến đã chuyển sang weight of evidence. Đây là lựa chọn có chủ đích, vì ngân hàng phải giải thích được một quyết định từ chối cho cả khách hàng lẫn cơ quan quản lý, và một mô hình minh bạch mới làm được điều đó. Trên tập kiểm tra tách riêng, mô hình đạt AUC 0,852, KS 0,552 và Gini 0,704, với điểm số trên tập huấn luyện và tập kiểm tra gần như trùng nhau, cho thấy nó không bị overfit. Một mô hình gradient boosting được thử như một mức trần và chỉ hơn scorecard khoảng một điểm AUC, nên bản giải thích được mới là bản đáng giữ.
+Sau đó điểm số được quy đổi thành thang điểm và gom thành các band. Tỷ lệ nợ xấu giảm đều từ khoảng 51 phần trăm ở band thấp nhất xuống dưới 1 phần trăm ở band cao nhất, đúng loại thông tin mà một đội quản trị chất lượng tín dụng dùng để đặt ngưỡng duyệt vay và theo dõi danh mục theo thời gian.
