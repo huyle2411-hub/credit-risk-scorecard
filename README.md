@@ -1,4 +1,4 @@
-##Credit Risk Scorecard
+# Credit Risk Scorecard
 
 Xây dựng mô hình Probability of Default trên bộ Give Me Some Credit (Kaggle, 150k hồ sơ vay)
 
