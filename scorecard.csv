@@ -1,0 +1,73 @@
+Variable,Bin,Points
+RevolvingUtilizationOfUnsecuredLines,"(-inf, 0.06)",96.1
+RevolvingUtilizationOfUnsecuredLines,"[0.06, 0.13)",92.42
+RevolvingUtilizationOfUnsecuredLines,"[0.13, 0.22)",85.13
+RevolvingUtilizationOfUnsecuredLines,"[0.22, 0.30)",80.87
+RevolvingUtilizationOfUnsecuredLines,"[0.30, 0.39)",75.2
+RevolvingUtilizationOfUnsecuredLines,"[0.39, 0.49)",71.1
+RevolvingUtilizationOfUnsecuredLines,"[0.49, 0.70)",63.29
+RevolvingUtilizationOfUnsecuredLines,"[0.70, 0.90)",53.89
+RevolvingUtilizationOfUnsecuredLines,"[0.90, inf)",44.52
+RevolvingUtilizationOfUnsecuredLines,Special,70.32
+RevolvingUtilizationOfUnsecuredLines,Missing,70.32
+age,"(-inf, 29.50)",62.45
+age,"[29.50, 36.50)",63.92
+age,"[36.50, 43.50)",66.16
+age,"[43.50, 47.50)",67.64
+age,"[47.50, 49.50)",68.14
+age,"[49.50, 52.50)",68.66
+age,"[52.50, 55.50)",69.98
+age,"[55.50, 59.50)",73.54
+age,"[59.50, 62.50)",75.02
+age,"[62.50, 67.50)",79.56
+age,"[67.50, 74.50)",83.55
+age,"[74.50, inf)",86.2
+age,Special,70.32
+age,Missing,70.32
+NumberOfTime30-59DaysPastDueNotWorse,"(-inf, 0.50)",80.25
+NumberOfTime30-59DaysPastDueNotWorse,"[0.50, 1.50)",53.76
+NumberOfTime30-59DaysPastDueNotWorse,"[1.50, inf)",36.14
+NumberOfTime30-59DaysPastDueNotWorse,Special,70.32
+NumberOfTime30-59DaysPastDueNotWorse,Missing,70.32
+DebtRatio,"(-inf, 0.02)",77.42
+DebtRatio,"[0.02, 0.35)",73.16
+DebtRatio,"[0.35, 0.42)",71.7
+DebtRatio,"[0.42, 0.51)",68.21
+DebtRatio,"[0.51, 0.65)",62.63
+DebtRatio,"[0.65, 3.97)",56.05
+DebtRatio,"[3.97, 995.50)",71.83
+DebtRatio,"[995.50, inf)",78.17
+DebtRatio,Special,70.32
+DebtRatio,Missing,70.32
+MonthlyIncome,"(-inf, 1508.50)",69.72
+MonthlyIncome,"[1508.50, 2569.50)",67.93
+MonthlyIncome,"[2569.50, 3459.50)",67.65
+MonthlyIncome,"[3459.50, 4831.50)",68.97
+MonthlyIncome,"[4831.50, 5320.50)",69.9
+MonthlyIncome,"[5320.50, 6643.50)",70.32
+MonthlyIncome,"[6643.50, 7656.50)",71.51
+MonthlyIncome,"[7656.50, 9945.50)",72.02
+MonthlyIncome,"[9945.50, inf)",73.11
+MonthlyIncome,Special,70.32
+MonthlyIncome,Missing,70.32
+NumberOfOpenCreditLinesAndLoans,"(-inf, 2.50)",66.46
+NumberOfOpenCreditLinesAndLoans,"[2.50, 3.50)",69.64
+NumberOfOpenCreditLinesAndLoans,"[3.50, 4.50)",70.57
+NumberOfOpenCreditLinesAndLoans,"[4.50, 5.50)",70.63
+NumberOfOpenCreditLinesAndLoans,"[5.50, 7.50)",71.33
+NumberOfOpenCreditLinesAndLoans,"[7.50, 8.50)",72.15
+NumberOfOpenCreditLinesAndLoans,"[8.50, 11.50)",71.09
+NumberOfOpenCreditLinesAndLoans,"[11.50, 13.50)",71.0
+NumberOfOpenCreditLinesAndLoans,"[13.50, inf)",70.07
+NumberOfOpenCreditLinesAndLoans,Special,70.32
+NumberOfOpenCreditLinesAndLoans,Missing,70.32
+NumberOfTimes90DaysLate,"(-inf, 0.50)",77.08
+NumberOfTimes90DaysLate,"[0.50, inf)",30.77
+NumberOfTimes90DaysLate,Special,70.32
+NumberOfTimes90DaysLate,Missing,70.32
+NumberRealEstateLoansOrLines,"(-inf, 0.50)",66.73
+NumberRealEstateLoansOrLines,"[0.50, 1.50)",74.23
+NumberRealEstateLoansOrLines,"[1.50, 2.50)",73.19
+NumberRealEstateLoansOrLines,"[2.50, inf)",66.46
+NumberRealEstateLoansOrLines,Special,70.32
+NumberRealEstateLoansOrLines,Missing,70.32
